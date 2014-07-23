@@ -19,9 +19,10 @@ data:
   # key => file routes, matched top to bottom
   write:
     ## E.g., write devise and simple form keys to their respective files
-    # - ['{devise, simple_form}.*', 'config/locales/\1.%{locale.yml}']
+    #- ['{devise, simple_form}.*', 'config/locales/\1.%{locale.yml}']
     # Catch-all
     - config/locales/%{locale}.yml
+    #- config/locales/*.%{locale}.yml
     # `i18n-tasks normalize -p` will force move the keys according to these rules
 
   # YAML / JSON serializer options, passed to load / dump / parse / serialize
@@ -65,10 +66,10 @@ search:
 #   - pagination.views.*
 
 ## Consider these keys used
-# ignore_unused:
-#   - 'simple_form.{yes,no}'
-#   - 'simple_form.{placeholders,hints,labels}.*'
-#   - 'simple_form.{error_notification,required}.:'
+ignore_unused:
+  - 'simple_form.{yes,no}'
+  - 'simple_form.{placeholders,hints,labels}.*'
+  - 'simple_form.{error_notification,required}.:'
 
 ## Exclude these keys from `i18n-tasks eq-base' report
 # ignore_eq_base:
