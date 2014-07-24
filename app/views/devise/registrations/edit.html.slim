@@ -14,12 +14,12 @@
         = f.input :email, required: true
         = f.input :password,
             autocomplete: "off",
-            hint: t('app.user.edit.new_password.hint'),
+            hint: t('view.devise.registrations.edit.new_password.hint'),
             required: false
         = f.input :password_confirmation,
             required: false
         = f.input :current_password,
-            hint: t('app.user.edit.confirm_password.hint'),
+            hint: t('view.devise.registrations.edit.confirm_password.hint'),
             required: true
 
       .form-actions
@@ -27,11 +27,11 @@
 
   .medium-6.columns.end
     h6
-      b= t('app.user.cancel.title')
+      b= t('view.devise.registrations.edit.cancel.title')
     p
-      = t('app.user.cancel.reason')
+      = t('view.devise.registrations.edit.cancel.reason')
       '
-      = link_to t('app.user.cancel.title'),
+      = link_to t('view.devise.registrations.edit.cancel.title'),
           registration_path(resource_name),
-          data: { confirm: t('app.form.sure') },
+          data: { confirm: t('view.application.form.sure') },
           method: :delete
