@@ -36,15 +36,19 @@ en:
       confirmations:
         new: Didn't receive confirmation instructions?
 
+
+  dictionary:
+    enter_email: &enter_email "Enter your email address"
+
   views:
     devise:
       confirmation:
         new:
           title: "Resend confirmation instructions"
-          legend: "Enter your email address"
+          legend: *enter_email
       passwords:
         new:
-          legend: "Enter your email address"
+          legend: *enter_email
           submit: "Send me reset password instructions"
         edit:
           legend: "Enter new password"
@@ -76,11 +80,11 @@ en:
             confirmation:
               link: "Didn't receive confirmation instructions?"
               unlock: "Didn't receive unlock instructions?"
-      application:
-        form:
-          update: "Update"
-          sure: "Are you sure?"
-        time:
+    application:
+      form:
+        update: "Update"
+        sure: "Are you sure?"
+      time:
           formats:
             short_date: "%x"
             long_date: "%a, %b %d, %Y"

@@ -8,7 +8,7 @@
         as: resource_name,
         url: registration_path(resource_name) do |f|
 
-      legend= t('views.devise.registration.new.legend_html', app_name: t('titles.application'))
+      legend= t('views.devise.registrations.new.legend_html', app_name: t('titles.application'))
 
       .form-inputs
         = f.input :full_name, required: true, autofocus: true
@@ -17,7 +17,7 @@
         = f.input :password_confirmation, required: true
 
       .form-actions
-        = f.button :submit, t('views.devise.registration.new.title')
+        = f.button :submit, t('views.devise.registrations.new.title')
 
   .medium-6.columns.end
     = render "devise/shared/links"
