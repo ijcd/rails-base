@@ -13,11 +13,11 @@
       = f.full_error :reset_password_token
 
       .form-inputs
-        = f.input :password, label: t('view.devise.passwords.edit.legend'), required: true
-        = f.input :password_confirmation, label: t('view.devise.passwords.edit.confirm'), required: true
+        = f.input :password, label: t('views.devise.passwords.edit.legend'), required: true
+        = f.input :password_confirmation, label: t('views.devise.passwords.edit.confirm'), required: true
 
       .form-actions
-        = f.button :submit, t('view.aplication.form.update')
+        = f.button :submit, t('views.aplication.form.update')
 
   .medium-6.columns.end
     = render "devise/shared/links"

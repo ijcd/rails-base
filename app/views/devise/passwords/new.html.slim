@@ -10,10 +10,10 @@
         html: { method: :post } do |f|
 
       .form-inputs
-        = f.input :email, required: true, label: t('view.devise.passwords.new.legend')
+        = f.input :email, required: true, label: t('views.devise.passwords.new.legend')
 
       .form-actions
-        = f.button :submit, t('view.devise.passwords.new.submit')
+        = f.button :submit, t('views.devise.passwords.new.submit')
 
   .medium-6.columns.end
       = render "devise/shared/links"
