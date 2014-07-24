@@ -36,7 +36,6 @@ en:
       confirmations:
         new: Didn't receive confirmation instructions?
 
-
   dictionary:
     enter_email: &enter_email "Enter your email address"
 
@@ -85,9 +84,9 @@ en:
         update: "Update"
         sure: "Are you sure?"
       time:
-          formats:
-            short_date: "%x"
-            long_date: "%a, %b %d, %Y"
-            us: "%m/%d/%Y %I:%M %p"
-            us_date: "%m/%d/%Y"
-            us_time: "%I:%M %p"
+        formats:
+           short_date: "%x"
+           long_date: "%a, %b %d, %Y"
+           us: "%m/%d/%Y %I:%M %p"
+           us_date: "%m/%d/%Y"
+           us_time: "%I:%M %p"
