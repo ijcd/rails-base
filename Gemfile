@@ -1,6 +1,6 @@
-source 'https://rubygems.org'
+  source 'https://rubygems.org'
 
-ruby '2.1.0'
+ruby '2.1.2'
 
 gem 'rails', '4.1.4'
 gem 'pg'
@@ -40,33 +40,27 @@ group :development do
 end
 
 group :development, :test do
-  # FIXME: Required for fixing warning
-  # https://github.com/rspec/rspec-rails/pull/772.
-  # Going to be fixed in rspec > 2.99
-  #
-  gem 'minitest'
-
-  gem 'fuubar'
+  gem 'fuubar', '~> 2.0.0.rc1'
   gem 'jazz_hands'
   gem 'dotenv-rails'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
 
   gem 'rails_best_practices'
   gem 'brakeman', require: false
   gem 'rubocop'
   gem 'bundler-audit'
-  gem 'i18n-tasks', '~> 0.6.1'
 end
 
 group :test do
   gem 'webmock', require: false
   gem 'capybara'
+  gem 'site_prism'
+  gem 'formulaic'
   gem 'database_cleaner'
   gem 'email_spec'
   gem 'launchy'
   gem 'shoulda-matchers'
-  gem 'turnip'
   gem 'codeclimate-test-reporter', require: false
 end
 
