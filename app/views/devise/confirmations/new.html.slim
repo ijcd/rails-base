@@ -10,7 +10,7 @@
         html: { method: :post } do |f|
 
       .form-inputs
-        = f.input :email, required: true, label: t('views.devise.confirmation.new.legend')
+        = f.input :email, required: true
 
       .form-actions
         = f.button :submit, t('views.devise.confirmation.new.title')

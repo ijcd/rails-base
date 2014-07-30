@@ -14,12 +14,10 @@
         = f.input :email, required: true
         = f.input :password,
             autocomplete: "off",
-            hint: t('views.devise.registrations.edit.new_password.hint'),
             required: false
         = f.input :password_confirmation,
             required: false
         = f.input :current_password,
-            hint: t('views.devise.registrations.edit.confirm_password.hint'),
             required: true
 
       .form-actions

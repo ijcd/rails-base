@@ -36,31 +36,19 @@ en:
       confirmations:
         new: Didn't receive confirmation instructions?
 
-  dictionary:
-    enter_email: &enter_email "Enter your email address"
-
   views:
     devise:
       confirmation:
         new:
           title: "Resend confirmation instructions"
-          legend: *enter_email
       passwords:
         new:
-          legend: *enter_email
           submit: "Send me reset password instructions"
-        edit:
-          legend: "Enter new password"
-          confirm: "Confirm your new password"
       registrations:
         new:
           title: "Sign up"
           legend_html: "Create your <strong>%{app_name}</strong> account"
         edit:
-          new_password:
-            hint: "Leave it blank if you don't want to change it"
-          confirm_password:
-            hint: "We need your current password to confirm your changes"
           cancel:
             title: "Cancel my account"
             reason: "Unhappy?"
