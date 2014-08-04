@@ -17,7 +17,7 @@ module Devise
 
         fill_form(
           :user,
-          email: email,
+          'Enter your email address' => email,
           password: password
         )
 

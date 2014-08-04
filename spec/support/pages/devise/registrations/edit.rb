@@ -18,16 +18,11 @@ module Devise
       def submit_user_form(options)
         fill_form(
           :user,
-          attributes_for(:user)
-            .slice(*edit_user_attributes)
-            .merge(options)
+          full_name: options[:full_name],
+          'Current password' => options[:current_password]
         )
 
         update_button.click
-      end
-
-      def edit_user_attributes
-        %i(full_name email password password_confirmation)
       end
     end
   end

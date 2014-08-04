@@ -12,6 +12,7 @@ feature 'Update account with valid data' do
   end
 
   scenario 'I submit update account form with valid data' do
+
     edit_user_page.load
     edit_user_page.submit_user_form(full_name: 'New Name', current_password: '123456')
 
