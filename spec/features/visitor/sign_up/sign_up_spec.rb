@@ -1,14 +1,14 @@
 require 'rails_helper'
 
 feature 'Sign up' do
-  let(:user) { create :user }
+  let(:user) { User.first }
 
   let(:sign_up_page) { Devise::Registrations::New.new }
   let(:resend_confirmation_page) { Devise::Confirmations::New.new }
 
   before(:each) do
     sign_up_page.load
-    sign_up_page.register(user)
+    sign_up_page.register
   end
 
   scenario 'User signs up successfully' do
