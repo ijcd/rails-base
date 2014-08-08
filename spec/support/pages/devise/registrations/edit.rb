@@ -19,7 +19,7 @@ module Devise
         fill_form(
           :user,
           full_name: options[:full_name],
-          'Current password' => options[:current_password]
+          current_password: options[:current_password]
         )
 
         update_button.click
