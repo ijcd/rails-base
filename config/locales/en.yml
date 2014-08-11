@@ -46,6 +46,15 @@ en:
             confirmation:
               link: "Didn't receive confirmation instructions?"
               unlock: "Didn't receive unlock instructions?"
+    partials:
+      navigation:
+        main:
+          dashboard: 'Dashboard'
+        user:
+          sign_in: 'Sign in'
+          sign_out: 'Sign out'
+          sign_up: 'Sign up'
+          edit_profile: 'Edit profile'
     application:
       form:
         update: "Update"
