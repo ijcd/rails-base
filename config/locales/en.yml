@@ -15,54 +15,10 @@ en:
       confirmations:
         new: Didn't receive confirmation instructions?
 
-  views:
-    devise:
-      confirmation:
-        new:
-          title: "Resend confirmation instructions"
-      passwords:
-        new:
-          submit: "Send me reset password instructions"
-      registrations:
-        new:
-          title: "Sign up"
-          legend_html: "Create your <strong>%{app_name}</strong> account"
-        edit:
-          cancel:
-            title: "Cancel my account"
-            reason: "Unhappy?"
-      sessions:
-        new:
-          title: "Sign in"
-          legend_html: "Enter your <strong>%{app_name}</strong> account"
-      shared:
-        links:
-          session_links: "Anything else?"
-          sign_up:
-            link: "Create a new account"
-          password:
-            forgot:
-              link: "Forgot your password?"
-            confirmation:
-              link: "Didn't receive confirmation instructions?"
-              unlock: "Didn't receive unlock instructions?"
-    partials:
-      navigation:
-        main:
-          dashboard: 'Dashboard'
-        user:
-          sign_in: 'Sign in'
-          sign_out: 'Sign out'
-          sign_up: 'Sign up'
-          edit_profile: 'Edit profile'
-    application:
-      form:
-        update: "Update"
-        sure: "Are you sure?"
-      time:
-        formats:
-           short_date: "%x"
-           long_date: "%a, %b %d, %Y"
-           us: "%m/%d/%Y %I:%M %p"
-           us_date: "%m/%d/%Y"
-           us_time: "%I:%M %p"
+  time:
+    formats:
+      short_date: "%x"
+      long_date: "%a, %b %d, %Y"
+      us: "%m/%d/%Y %I:%M %p"
+      us_date: "%m/%d/%Y"
+      us_time: "%I:%M %p"
