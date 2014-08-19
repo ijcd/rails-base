@@ -1,19 +1,19 @@
-h6= t('views.devise.shared.links.session_links')
+h6= t('user.session_links')
 ul.links
   - if controller_name != 'sessions'
-    li= link_to t('views.devise.sessions.new.title'), new_session_path(resource_name)
+    li= link_to t('user.sign_in.title'), new_session_path(resource_name)
 
   - if devise_mapping.registerable? && controller_name != 'registrations'
-    li= link_to t('views.devise.shared.links.sign_up.link'), new_registration_path(resource_name)
+    li= link_to t('user.sign_up.link'), new_registration_path(resource_name)
 
   - if devise_mapping.recoverable? && controller_name != 'passwords'
-    li= link_to t('views.devise.shared.links.password.forgot.link'), new_password_path(resource_name)
+    li= link_to t('user.password.forgot.link'), new_password_path(resource_name)
 
   - if devise_mapping.confirmable? && controller_name != 'confirmations'
-    li= link_to t('views.devise.shared.links.password.confirmation.link'), new_confirmation_path(resource_name)
+    li= link_to t('user.password.confirmation.link'), new_confirmation_path(resource_name)
 
   - if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks'
-    li= link_to t('views.devise.shared.links.password.confirmation.unlock'), new_unlock_path(resource_name)
+    li= link_to t('user.password.confirmation.unlock'), new_unlock_path(resource_name)
 
   - if devise_mapping.omniauthable?
     - resource_class.omniauth_providers.each do |provider|

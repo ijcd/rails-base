@@ -21,15 +21,15 @@
             required: true
 
       .form-actions
-        = f.button :submit, t('views.application.form.update')
+        = f.button :submit, t('form.update')
 
   .medium-6.columns.end
     h6
-      b= t('views.devise.registrations.edit.cancel.title')
+      b= t('user.cancel.title')
     p
-      = t('views.devise.registrations.edit.cancel.reason')
+      = t('user.cancel.reason')
       '
-      = link_to t('views.devise.registrations.edit.cancel.title'),
+      = link_to t('user.cancel.title'),
           registration_path(resource_name),
-          data: { confirm: t('views.application.form.sure') },
+          data: { confirm: t('form.sure') },
           method: :delete
