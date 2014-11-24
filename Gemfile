@@ -24,6 +24,10 @@ gem 'active_link_to'
 gem 'title'
 gem 'github-markdown' # only for dashboard controller
 
+# javascript additions
+gem 'turbolinks'
+gem 'jquery-turbolinks'
+
 # all other gems
 gem 'devise'
 gem 'decent_exposure'
