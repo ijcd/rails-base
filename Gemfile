@@ -27,6 +27,7 @@ gem 'github-markdown' # only for dashboard controller
 # javascript additions
 gem 'turbolinks'
 gem 'jquery-turbolinks'
+gem 'nprogress-rails'
 
 # all other gems
 gem 'devise'
