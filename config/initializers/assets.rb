@@ -12,3 +12,11 @@ Rails.application.config.assets.precompile += %w(
   ie8/respond.min.js
   ie8/rem.js
 )
+
+# teaspoon
+Rails.application.config.assets.precompile += %w(
+  teaspoon.css
+  teaspoon-teaspoon.js
+  mocha/1.17.1.js
+  teaspoon-mocha.js
+)

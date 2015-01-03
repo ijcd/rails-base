@@ -20,13 +20,13 @@ group :spec do
   end
 end
 
-# guard :teaspoon do
-#   # Implementation files
-#   watch(%r{^app/assets/javascripts/(.+).js}) { |m| "#{m[1]}_spec" }
+guard :teaspoon, cmd: 'spring teaspoon', environment: 'spec/teaspoon_env.rb' do
+  # Implementation files
+  watch(%r{^app/assets/javascripts/(.+).js}) { |m| "#{m[1]}_spec" }
 
-#   # Specs / Helpers
-#   watch(%r{^spec/javascripts/(.*)})
-# end
+  # Specs / Helpers
+  watch(%r{^spec/javascripts/(.*)})
+end
 
 # # Start the spin server with RSpec and Cucumber support, and report time for each run
 # guard 'spin', rspec:true, testunit: false, cli: "--time" do
