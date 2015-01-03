@@ -37,7 +37,21 @@ group :staging, :production do
 end
 
 group :test do
+  gem 'simplecov', require: false
+
+  # capybara
   gem 'capybara'
+  gem 'capybara-screenshot'
+  gem 'show_me_the_cookies'
+
+  gem 'poltergeist'
+  gem 'resque_spec'
+  gem 'vcr'
+
+  # rspec
+  gem 'rspec-retry'
+  gem 'rspec-instafail'
+
   gem 'codeclimate-test-reporter', require: false
   gem 'database_cleaner'
   gem 'email_spec'
@@ -60,6 +74,16 @@ group :development, :test do
   gem 'rails_best_practices'
   gem 'rspec-rails', '~> 3.0'
   gem 'rubocop'
+
+  gem 'spring', require: false
+  gem 'spring-commands-rspec', require: false
+  # gem 'spring-commands-cucumber', require: false
+  # gem 'spring-commands-spinach', require: false
+  # gem 'spring-commands-testunit', require: false
+  gem 'spring-commands-teaspoon', require: false
+
+  # teaspoon
+  gem 'teaspoon'#, require: false
 end
 
 group :development do
@@ -69,4 +93,8 @@ group :development do
   gem 'letter_opener'
   gem 'slim-rails'
   gem 'styleguides'
+
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-teaspoon'
 end
