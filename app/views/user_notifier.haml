@@ -1,0 +1,17 @@
+= render 'style'
+
+%h1 TimeSampler: Weekly activity report · week #{@start_time.cweek}
+
+%p
+  Hi #{@user.some_name}!
+
+- if @project_days.any?
+  %p
+    Here's what you've done during the past week (#{link_to "from #{@start_time} to #{@end_time}", journal_path}):
+  .days
+    - @days.sort.reverse.each do |(day, project_days)|
+      = render 'day', day: day, project_days: project_days
+- else
+  = render 'blank_slate'
+
+= render 'footer'
